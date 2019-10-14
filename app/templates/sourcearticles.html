@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% import 'macro.html' as macro%}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static',filename ='css/styles.css')}}">
+{%endblock%}
+
+{% block content%}
+<div class="container-fluid" id="allsource">
+    <div class="overlay">
+        {{ macro.display_sources_articles(articles)}}
+    </div>
+</div>
+{%endblock%}
