@@ -14,3 +14,14 @@ class Config:
     SOURCE_ARTICLE_URL = 'https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
 
    
+
+class ProdConfig(Config):
+    '''
+
+    Production configuration child class
+
+    Arg:
+        Config: The parent configuration class with General configuration settings
+    '''    
+    pass
+
