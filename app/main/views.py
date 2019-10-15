@@ -27,7 +27,7 @@ def sourceArticle(id):
     source = id
     return render_template('sourcearticles.html', articles = all_articles, source = source)
 
-@main.route('/')
+@main.route('/News-Articles')
 def NewsArticle():
     '''
     views that returns the news article
@@ -37,7 +37,7 @@ def NewsArticle():
 
     return render_template('article.html', education = education_article,health=health_article)
 
-@main.route('/')
+@main.route('/search/<articl>')
 def articleSearch(article_name):
     '''
     a function that returns the searched articles
