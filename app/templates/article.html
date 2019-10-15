@@ -1,20 +1,21 @@
 {% extends 'base.html'%}
-{% inport 'macro.html' as macro %}
+{% import 'macro.html' as macro %}
 
 {% block styles %}
     {{ super() }}
-    <link rel="stylesheet" href="{{ url for ('static',filename ='css/styles.css')}}">
-{%endblock%}
+    <link rel="stylesheet" href="{{ url_for ('static',filename ='css/styles.css')}}">
+{% endblock %}
 
-{% block content%}
+{% block content %}
 <div class="container-fluid" id="allsource">
     <div class="overylay container-fluid">
         
         <h2 class="text-center headers">Education Articles</h2>
-        {{ display_new_articles(education)}}
+        {{ macro.display_new_articles(education)}}
 
         <h2 class="text-center headers">Health Articles</h2>
-        {{ display_new_articles(health)}}
+        {{macro.display_new_articles(health)}}
+
     </div>
 </div>
-{%endblock%}
+{% endblock %}
