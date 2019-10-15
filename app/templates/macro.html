@@ -1,9 +1,9 @@
 {% macro display_new_sources(sources_outcome)%}
 <div class="container-fluid">
-    <div class="card-column">
+    <div class="card-columns">
         {% for news in sources_outcome%}
         <div class="card sourcecard">
-            <div class="card-header sourcename">
+            <div class="card-header " id="sourcename">
                 <h4><a href="/articles/{{news.id}}">{{news.name}}</a></h4>
             </div>
             <div class="card-body">
@@ -21,7 +21,7 @@
 
 {% macro display_new_articles(articles_outcome)%}
 <div class="container-fluid">
-    <div class="card-columns">
+    <div class="card">
         {%for article in articles_outcome %}
         <div class="card">
             <div class="card-header arti">
