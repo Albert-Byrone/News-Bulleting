@@ -37,7 +37,7 @@ def NewsArticle():
 
     return render_template('article.html', education = education_article,health=health_article)
 
-@main.route('/search/<articl>')
+@main.route('/search/<article>')
 def articleSearch(article_name):
     '''
     a function that returns the searched articles
