@@ -19,24 +19,27 @@
 </div>
 {% endmacro %}
 
-{% macro display_new_articles(articles_outcome)%}
+{% macro display_new_articles(article_response)%}
 <div class="container-fluid">
-    <div class="card">
-        {%for article in articles_outcome %}
+    <div class="card-columns">
+        {%for article in article_response %}
         <div class="card">
             <div class="card-header arti">
-                <h4>{{article.title}}</h4>
+                <h4>{{article.title['name']}}</h4>
             </div>
             <div class="card-body">
-                <img src="article.urlToImage" alt="{{article.title}}" class="card-img">
+                <div>
+                    <img src="{{article.urlToImage}}" alt="" class="card-img">
+                </div>   
             <hr>
             <p class="descrip">
                 {{article.description}}
-            </p>
-            <p>Posted: {{article.publishedAt | truncate(12)}} By: {{article.author | truncate(13)}}</p>
+            </p>    
+            <p>Posted: {{article.publishedAt[:10] }} </p> 
            </div>
            <div class="card-footer">
                <a href="{{article.url}}"><button class="btn btn-sm btn-outline-success">Read More</button></a>
+               <span style="float: right;">By: {{article.author}}</span>
            </div>
         </div>
         {%endfor%}
