@@ -66,12 +66,12 @@ def get_articles(article):
     get_article_url = article_url.format(article,api_key)
     with urllib.request.urlopen(get_article_url) as url:
         article_data = url.read()
-        article_response = json.loads(article_data)
+        article_resp = json.loads(article_data)
 
         article_response = None
 
-        if article_response['articles']:
-            article_response_list = article_response['articles']
+        if article_resp['articles']:
+            article_response_list = article_resp['articles']
             article_response = process_new_article(article_response_list)
 
     return article_response
