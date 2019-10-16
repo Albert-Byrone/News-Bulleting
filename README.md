@@ -18,10 +18,10 @@ Click  https://news-bullets.herokuapp.com/  to visit the site
 ## Development Installation
 1. Cloning the repository:
 ```bash
- git clone
+ git clone https://github.com/Albert-Byrone/News-Bulletins.git
  ```
 
-2. MOve to folder and install the rquirements
+2. Move to folder and install the rquirements
 ```bash 
 cd News_Bulletins
 pip install requirements.txt
