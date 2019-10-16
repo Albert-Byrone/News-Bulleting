@@ -6,7 +6,7 @@ This application with help to those who dont get time to watch TV.The website sh
 
 ## Live Demo
 
-Click  https://news-bullets.herokuapp.com/  to visit the site
+Click  https://news-highlights01.herokuapp.com/  to visit the site
 
 ## User Story
 
