@@ -7,10 +7,10 @@ class Config:
     NEWS_API_BASE_URL = 'https://newsapi.org/v2/sources?country=us&category={}&apiKey={}'
     NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
     # SOURCE_ARTICLE_URL  = os.environ.get('SOURCE_ARTICLE_URL ')
-    NEWS_ARTICLE_APL_URL  = os.environ.get('NEWS_ARTICLE_APL_URL ')
+    # NEWS_ARTICLE_APL_URL  = os.environ.get('NEWS_ARTICLE_APL_URL ')
     SECRET_KEY = os.environ.get('SECRET_KEY')
     # NEWS_API_BASE_URL = 'https://newsap/i.org/v2/sources?country=ke&category={}&apiKey={}'
-    # NEWS_ARTICLE_APL_URL = 'https://newsapi.org/v2/everything?q={}&apiKey={}'
+    NEWS_ARTICLE_APL_URL = 'https://newsapi.org/v2/everything?q={}&apiKey={}'
     SOURCE_ARTICLE_URL = 'https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
 
    
