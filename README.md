@@ -2,6 +2,8 @@
 
 ## Author
 
+Albert Byrone
+
 This application with help to those who dont get time to watch TV.The website shows different articles from different authors .It consumes data from the [NEWS API](https://newsapi.org/)
 
 ## Live Demo
